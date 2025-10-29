@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://bjnqlklokglbi"]
 
-[ext_resource type="Script" uid="uid://ch3k5ibuj35oc" path="res://Scripts/character_body_2d.gd" id="1_v0iea"]
+[ext_resource type="Script" uid="uid://ch3k5ibuj35oc" path="res://Scripts/PlayerController.gd" id="1_v0iea"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_sh265"]
 radius = 42.0
@@ -20,3 +20,10 @@ shape = SubResource("CapsuleShape2D_sh265")
 position = Vector2(0, -6.914139e-06)
 scale = Vector2(80, 167.99998)
 texture = SubResource("CanvasTexture_v0iea")
+
+[node name="CoyoteTime" type="Timer" parent="CharacterBody2D"]
+wait_time = 0.15
+one_shot = true
+
+[node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
+position_smoothing_enabled = true
