@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://b158sjec67mbw" path="res://Sprites/Temp ground.webp" id="1_pquxj"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_8n7cf"]
-size = Vector2(416, 127)
+size = Vector2(417, 132)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_kti7u"]
 texture = ExtResource("1_pquxj")
@@ -28578,7 +28578,7 @@ sources/0 = SubResource("TileSetAtlasSource_kti7u")
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2(64, 63.5)
+position = Vector2(63.5, 64)
 shape = SubResource("RectangleShape2D_8n7cf")
 
 [node name="TileMap" type="Node2D" parent="."]
