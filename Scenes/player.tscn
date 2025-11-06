@@ -14,6 +14,7 @@ height = 180.0
 script = ExtResource("1_v0iea")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
+scale = Vector2(1, 0.96)
 shape = SubResource("CapsuleShape2D_sh265")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
@@ -23,6 +24,10 @@ texture = SubResource("CanvasTexture_v0iea")
 
 [node name="CoyoteTime" type="Timer" parent="CharacterBody2D"]
 wait_time = 0.15
+one_shot = true
+
+[node name="DashWindow" type="Timer" parent="CharacterBody2D"]
+wait_time = 0.1
 one_shot = true
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
